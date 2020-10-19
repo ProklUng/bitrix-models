@@ -8,6 +8,7 @@ use Arrilot\BitrixModels\Models\Traits\HidesAttributes;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use IteratorAggregate;
+use Illuminate\Support\Str;
 
 abstract class ArrayableModel implements ArrayAccess, Arrayable, Jsonable, IteratorAggregate
 {
@@ -139,7 +140,7 @@ abstract class ArrayableModel implements ArrayAccess, Arrayable, Jsonable, Itera
      */
     private function getAccessor($field)
     {
-        $method = 'get'.camel_case($field).'Attribute';
+        $method = 'get'.Str::camel()($field).'Attribute';
 
         return method_exists($this, $method) ? $method : false;
     }

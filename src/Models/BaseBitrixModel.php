@@ -5,6 +5,7 @@ namespace Arrilot\BitrixModels\Models;
 use Arrilot\BitrixModels\Models\Traits\ModelEventsTrait;
 use Arrilot\BitrixModels\Queries\BaseQuery;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Arr;
 use LogicException;
 
 abstract class BaseBitrixModel extends ArrayableModel
@@ -230,7 +231,7 @@ abstract class BaseBitrixModel extends ArrayableModel
     {
         $keys = [];
         foreach ($fields as $key => $value) {
-            array_set($this->fields, $key, $value);
+            Arr::set($this->fields, $key, $value);
             $keys[] = $key;
         }
 
