@@ -13,9 +13,9 @@
   ],
   "homepage": "https://github.com/Arrilot/bitrix-models",
   "require": {
-    "php": ">=5.6.4",
-    "illuminate/support": "5.*|6.*|7.*",
-    "illuminate/pagination": "5.*|6.*|7.*"
+    "php": ">=7.1",
+    "illuminate/support": "^6.0",
+    "illuminate/pagination": "^6.0"
   },
   "suggest": {
     "arrilot/bitrix-blade": "To render pagination views using ->links()",
