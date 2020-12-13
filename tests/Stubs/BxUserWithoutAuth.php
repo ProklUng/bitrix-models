@@ -9,6 +9,12 @@ class BxUserWithoutAuth
         return;
     }
 
+    public function getParam()
+    {
+        return;
+    }
+
+
     public function getUserGroupArray()
     {
         return [2];
