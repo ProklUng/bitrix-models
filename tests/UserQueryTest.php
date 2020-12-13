@@ -8,7 +8,7 @@ use Mockery as m;
 
 class UserQueryTest extends TestCase
 {
-    public function tearDown()
+    public function tearDown() : void
     {
         m::close();
     }

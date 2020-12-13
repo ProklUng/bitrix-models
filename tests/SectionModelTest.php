@@ -7,12 +7,12 @@ use Mockery as m;
 
 class SectionModelTest extends TestCase
 {
-    public function setUp()
+    public function setUp() : void
     {
         TestSection::$bxObject = m::mock('obj');
     }
 
-    public function tearDown()
+    public function tearDown() : void
     {
         TestSection::destroyObject();
         m::close();

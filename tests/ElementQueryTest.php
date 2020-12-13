@@ -9,7 +9,7 @@ use Mockery as m;
 
 class ElementQueryTest extends TestCase
 {
-    public function tearDown()
+    public function tearDown() : void
     {
         m::close();
     }

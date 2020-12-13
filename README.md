@@ -3,6 +3,7 @@
 [![Build Status](https://img.shields.io/travis/arrilot/bitrix-models/master.svg?style=flat)](https://travis-ci.org/arrilot/bitrix-models)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/arrilot/bitrix-models/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/arrilot/bitrix-models/)
 
+13.12.2020: обновлены хэлперы и актуализированы тесты.
 
 # Данный пакет больше активно не поддерживается
 

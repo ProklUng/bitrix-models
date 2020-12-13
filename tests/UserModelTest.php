@@ -10,12 +10,12 @@ use Mockery as m;
 
 class UserModelTest extends TestCase
 {
-    public function setUp()
+    public function setUp() : void
     {
         TestUser::$bxObject = m::mock('obj');
     }
 
-    public function tearDown()
+    public function tearDown() : void
     {
         TestUser::destroyObject();
         m::close();

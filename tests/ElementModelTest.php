@@ -11,14 +11,14 @@ use Mockery as m;
 
 class ElementModelTest extends TestCase
 {
-    public function setUp()
+    public function setUp() : void
     {
         TestElement::$bxObject = m::mock('obj');
         TestElement::setCurrentLanguage('RU');
         ElementQuery::$cIblockObject = m::mock('cIblockObject');
     }
 
-    public function tearDown()
+    public function tearDown() : void
     {
         TestElement::destroyObject();
         m::close();

@@ -8,7 +8,7 @@ use Mockery as m;
 
 class D7QueryTest extends TestCase
 {
-    public function tearDown()
+    public function tearDown() : void
     {
         m::close();
     }
